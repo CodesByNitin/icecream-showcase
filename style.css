@@ -79,12 +79,12 @@ body {
 
 .packet1.down,
 .packet3.down {
-    transform: translateY(700px);
+    transform: translateY(900px);
 }
 
 .packet2.up,
 .packet4.up {
-    transform: translateY(-700px);
+    transform: translateY(-900px);
 }
 
 .elements {
@@ -279,9 +279,13 @@ body {
     .elements img {
         width: 100px;
     }
+
+    .caption-btn {
+        bottom: 10px
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     body {
         display: block;
         overflow-x: hidden;
@@ -302,6 +306,7 @@ body {
     }
 
     .caption-btn {
-        bottom: 15px
+        bottom: 10px
     }
 }
+
