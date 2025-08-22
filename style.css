@@ -204,32 +204,104 @@ body {
 }
 
 @media (max-width: 1024px) {
-  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
-  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
-  .icecream img { width: 160px; }
-  .packet img { width: 200px; }
-  .elements img { width: 120px; }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .box {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .icecream img {
+        width: 160px;
+    }
+
+    .packet img {
+        width: 200px;
+    }
+
+    .elements img {
+        width: 120px;
+    }
 }
 
 @media (max-width: 900px) {
-  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
-  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
-  .icecream img { width: 140px; }
-  .packet img { width: 180px; }
-  .elements img { width: 110px; }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .box {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .icecream img {
+        width: 140px;
+    }
+
+    .packet img {
+        width: 180px;
+    }
+
+    .elements img {
+        width: 110px;
+    }
 }
 
 @media (max-width: 768px) {
-  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
-  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
-  .icecream img { width: 120px; }
-  .packet img { width: 160px; }
-  .elements img { width: 100px; }
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .box {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .icecream img {
+        width: 120px;
+    }
+
+    .packet img {
+        width: 160px;
+    }
+
+    .elements img {
+        width: 100px;
+    }
 }
 
 @media (max-width: 480px) {
-  body { display: block; overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
-  .icecream img { width: 160px; }
-  .packet img { width: 200px; }
-  .elements img { width: 100px; }
+    body {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .icecream img {
+        width: 180px;
+    }
+
+    .packet img {
+        width: 230px;
+    }
+
+    .elements img {
+        width: 190px;
+    }
+
+    .caption-btn {
+        bottom: 15px
+    }
 }
