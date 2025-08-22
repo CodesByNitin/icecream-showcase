@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.box {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .4),
+        inset 0 0 10px rgba(0, 0, 0, .4),
+        inset 0 0 15px rgba(0, 0, 0, .4);
+}
+
+.box1 {
+    background: radial-gradient(circle farthest-corner at 14.2% 24%, rgba(239, 61, 78, 1) 0%, rgba(239, 61, 78, .81) 51.8%, rgba(239, 61, 78, .63) 84.6%);
+}
+
+.box2 {
+    background: radial-gradient(circle 851px at 79.7% -27.8%, rgba(153, 230, 77, 1) 6.9%, rgba(204, 255, 153, 1) 44.7%, rgba(102, 178, 51, 1) 75.4%, rgba(51, 102, 26, 1) 95.3%);
+}
+
+.box3 {
+    background: linear-gradient(109.6deg, rgb(145, 69, 145) 11.2%, rgb(78, 12, 75) 91.1%);
+}
+
+.box4 {
+    background: linear-gradient(109.6deg, rgb(255, 249, 86) 11.5%, rgb(226, 157, 17) 91.1%);
+}
+
+.icecream {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icecream img {
+    width: 180px;
+}
+
+.icecream13,
+.icecream24 {
+    transition: transform .6s ease-in-out;
+}
+
+.box:hover .icecream13,
+.box:hover .icecream24 {
+    transform: scale(1.1);
+    transition-delay: .1s;
+}
+
+.packet {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, .5));
+}
+
+.packet img {
+    width: 220px;
+}
+
+.packet1,
+.packet2,
+.packet3,
+.packet4 {
+    transition: transform .6s ease-in-out;
+}
+
+.packet1.down,
+.packet3.down {
+    transform: translateY(700px);
+}
+
+.packet2.up,
+.packet4.up {
+    transform: translateY(-700px);
+}
+
+.elements {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transform: scale(0);
+    transition: transform .6s ease-in-out;
+}
+
+.box:hover .elements {
+    transform: scale(1);
+}
+
+.element1,
+.element2,
+.element3,
+.element4 {
+    position: relative;
+    transition: transform .6s ease-in-out;
+}
+
+.element1 {
+    bottom: 290px;
+    right: -85px;
+    transform: rotate(35deg);
+}
+
+.element2 {
+    top: 290px;
+    left: -70px;
+    transform: rotate(-20deg);
+}
+
+.element3 {
+    top: 290px;
+    left: 65px;
+    transform: rotate(15deg);
+}
+
+.element4 {
+    bottom: 290px;
+    right: 70px;
+    transform: rotate(-45deg);
+}
+
+.box:hover .element1,
+.box:hover .element2,
+.box:hover .element3,
+.box:hover .element4 {
+    transform: rotate(360deg);
+}
+
+.caption-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    padding: 10px 25px;
+    font-family: "Federant", serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+    transition: all .6s ease-in-out;
+}
+
+.box:hover .caption-btn {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.strawberry-btn {
+    background: rgba(255, 50, 101, .9);
+}
+
+.strawberry-btn:hover {
+    background: rgba(255, 55, 105, .8);
+}
+
+.lime-btn {
+    background: rgba(100, 200, 50, .8);
+}
+
+.lime-btn:hover {
+    background: rgba(100, 200, 50, 1);
+}
+
+.grape-btn {
+    background: rgba(150, 70, 200, .8);
+}
+
+.grape-btn:hover {
+    background: rgba(150, 70, 200, 1);
+}
+
+.pineapple-btn {
+    background: rgba(255, 200, 50, .8);
+}
+
+.pineapple-btn:hover {
+    background: rgba(255, 200, 50, 1);
+}
+
+.strawberry-btn:hover,
+.lime-btn:hover,
+.grape-btn:hover,
+.pineapple-btn:hover {
+    transform: translateX(-50%) translateY(-5px) scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
+  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
+  .icecream img { width: 160px; }
+  .packet img { width: 200px; }
+  .elements img { width: 120px; }
+}
+
+@media (max-width: 900px) {
+  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
+  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
+  .icecream img { width: 140px; }
+  .packet img { width: 180px; }
+  .elements img { width: 110px; }
+}
+
+@media (max-width: 768px) {
+  body { overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
+  .box { width: 100vw; height: 100vh; scroll-snap-align: start; }
+  .icecream img { width: 120px; }
+  .packet img { width: 160px; }
+  .elements img { width: 100px; }
+}
+
+@media (max-width: 480px) {
+  body { display: block; overflow-x: hidden; overflow-y: auto; scroll-snap-type: y mandatory; }
+  .icecream img { width: 160px; }
+  .packet img { width: 200px; }
+  .elements img { width: 100px; }
+}

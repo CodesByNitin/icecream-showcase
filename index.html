@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icecream Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="box box1">
+        <div class="packet packet1 packet13">
+            <img src="Pack/strawberry Pack.png" srcset="">
+        </div>
+
+        <div class="icecream icecream13">
+            <img src="Ice cream/raspberry with strawberry Ice Cream.png" srcset="">
+        </div>
+
+        <button class="caption-btn strawberry-btn">Buy Now</button>
+        
+        <div class="elements">
+            <img class="element1" src="Elements/strawberry1.png" width="150px" srcset="">
+            <img class="element2" src="Elements/strawberry2.png" width="150px" srcset="">
+            <img class="element3" src="Elements/strawberry3.png" width="150px" srcset="">
+            <img class="element4" src="Elements/strawberry4.png" width="150px" srcset="">
+        </div>
+    </div>
+    
+    <div class="box box2">
+        <div class="packet packet2 packet24">
+            <img src="Pack/Lime Pack.png" srcset="">
+        </div>
+        
+        <div class="icecream icecream24">
+            <img src="Ice cream/lime Ice Cream.png" srcset="">
+        </div>
+
+        <button class="caption-btn lime-btn">Buy Now</button>
+
+        <div class="elements">
+            <img class="element1" src="Elements/lime1.png" width="150px" srcset="">
+            <img class="element2" src="Elements/lime2.png" width="150px" srcset="">
+            <img class="element3" src="Elements/lime3.png" width="150px" srcset="">
+            <img class="element4" src="Elements/lime4.png" width="150px" srcset="">
+        </div>
+    </div>
+    
+    <div class="box box3">
+        <div class="packet packet3 packet13">
+            <img src="Pack/Grape Pack.png" srcset="">
+        </div>
+        
+        <div class="icecream icecream13">
+            <img src="Ice cream/grape Ice Cream.png" srcset="">
+        </div>
+
+        <button class="caption-btn grape-btn">Buy Now</button>
+
+        <div class="elements">
+            <img class="element1" src="Elements/grape1.png" width="150px" srcset="">
+            <img class="element2" src="Elements/grape2.png" width="150px" srcset="">
+            <img class="element3" src="Elements/grape3.png" width="150px" srcset="">
+            <img class="element4" src="Elements/grape4.png" width="150px" srcset="">
+        </div>
+    </div>
+    
+    <div class="box box4">
+        <div class="packet packet4 packet24">
+            <img src="Pack/Pineapple Pack.png" srcset="">
+        </div>
+        
+        <div class="icecream icecream24">
+            <img src="Ice cream/Pineapple Ice Cream.png" srcset="">
+        </div>
+
+        <button class="caption-btn pineapple-btn">Buy Now</button>
+
+        <div class="elements">
+            <img class="element1" src="Elements/pineapple1.png" width="150px" srcset="">
+            <img class="element2" src="Elements/pineapple2.png" width="150px" srcset="">
+            <img class="element3" src="Elements/pineapple3.png" width="150px" srcset="">
+            <img class="element4" src="Elements/pineapple4.png" width="150px" srcset="">
+        </div>
+    </div>
+</body>
+<script>
+  const boxes13 = document.querySelectorAll('.box');
+
+  boxes13.forEach(box => {
+        box.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.packet13').forEach(p => p.classList.remove('down'));
+        box.querySelector('.packet13').classList.add('down');
+        });
+        box.addEventListener('mouseleave', () => {
+        document.querySelectorAll('.packet13').forEach(p => p.classList.remove('down'));
+        });
+    });
+  
+  const boxes24 = document.querySelectorAll('.box');
+
+    boxes24.forEach(box => {
+        box.addEventListener('mouseenter', () => {
+          document.querySelectorAll('.packet24').forEach(p => p.classList.remove('up'));
+          box.querySelector('.packet24').classList.add('up');
+        });
+        box.addEventListener('mouseleave', () => {
+          document.querySelectorAll('.packet24').forEach(p => p.classList.remove('up'));
+        });
+    });
+
+</script>
+</html>
